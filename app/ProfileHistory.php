@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class ProfileHistory extends Model
 {
-    protected $guarded = array('id');
+    protected $guarded = ['id'];
 
-    public static $rules = array(
+    public static $rules = [
         'profiles_id' => 'required',
         'edited_at' => 'required',
-    );
+    ];
 }

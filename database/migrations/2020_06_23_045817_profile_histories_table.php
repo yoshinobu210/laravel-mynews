@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class ProfileHistoriesTable extends Migration
 {
@@ -17,7 +17,7 @@ class ProfileHistoriesTable extends Migration
             $table->increments('id');
             $table->integer('profile_id');
             $table->string('edited_at');
-            
+
             $table->timestamps();
         });
     }
